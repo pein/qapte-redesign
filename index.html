@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f4ee" />
+    <meta
+      name="description"
+      content="Préparez le CTFL et le CT-GenAI avec QApte : examens blancs chronométrés, corrections détaillées, renforcement ciblé et coach IA Testéo. Plateforme indépendante."
+    />
+    <meta property="og:title" content="QApte — Préparez vos certifications ISTQB" />
+    <meta
+      property="og:description"
+      content="Examens blancs ISTQB Foundation et IA générative, corrections expliquées, renforcement ciblé et Testéo. Essai gratuit."
+    />
+    <meta property="og:type" content="website" />
+    <title>QApte — Examens blancs ISTQB Foundation et IA générative</title>
+  </head>
+  <body>
+    <script>
+      (() => {
+        try {
+          const stored = localStorage.getItem('qapte-theme');
+          const theme = stored === 'light' || stored === 'dark' ? stored : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.style.colorScheme = theme;
+        } catch {}
+      })();
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
